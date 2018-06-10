@@ -1,0 +1,130 @@
+#all-user-messages li {
+    margin: 5px;
+    padding: 5px 10px;
+    display: inline-block;
+    position: relative;
+    width: 95%;
+    height: auto;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+#modal1 {
+    margin-top: 5%;
+    overflow: auto;
+    height: 400px;
+    border: none;
+    z-index: 1003;
+    display: block;
+    opacity: 1;
+    top: 10%;
+    transform: scaleX(1) scaleY(1);
+}
+
+.modal-header {
+    position: sticky;
+    top: 0;
+    background: whitesmoke;
+    height: 70px;
+    padding: 15px;
+    z-index: 2;
+}
+
+#all-user-messages {
+    margin-left: 25px;
+    margin-bottom: 5px;
+}
+
+#stats {
+    padding: 5px;
+    background: #f6f6f6;
+    box-shadow: none;
+    font-size: 0.8em;
+}
+
+#stats .grey-text {
+    margin: 9px 0;
+}
+
+#chat-message {
+    float: left;
+}
+
+#main {
+    margin-top: 5%;
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#chat-message-input {
+    height: 40px;
+}
+
+.login-button {
+    margin: 5%;
+}
+
+.login-screen {
+    margin-top: 10%;
+    height: 400px;
+}
+
+ul {
+    margin: 0;
+}
+
+li.chat-item {
+    margin-bottom: 0;
+    width: 100%;
+    position: relative;
+    animation: mymove 0.05s ease-in;
+}
+
+@keyframes mymove {
+    from {
+        top: 5px;
+    }
+    to {
+        top: 0px;
+    }
+}
+
+img {
+    border: 0;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+body {
+    overflow: hidden;
+}
+
+#chat-log {
+    height: 388px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 85%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f9f9f9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #f3f3f3;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #e1e1e1;
+}
