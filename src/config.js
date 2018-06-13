@@ -1,11 +1,11 @@
 const currentEnv = "staging";
 
 const dev = {
-    host: "localhost:7000"
+    host: 'localhost:7000'
 };
 
 const staging = {
-    host: "http://someHerokuUrl"
+    host: 'ec2-18-218-255-146.us-east-2.compute.amazonaws.com:8000'
 };
 
 const config = currentEnv === 'staging'
